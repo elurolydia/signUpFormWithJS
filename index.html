@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="container">
+  <header> 
+    <p id="heading_topic">Learn to code by watching others</p> 
+
+    <p id="heading_paragraph"> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. </p>
+  </header>
+
+  <div id="main_div">
+  <main>
+    <div id="try"><strong> Try it free 7 days</strong> then $20/mo. thereafter</div>
+
+    <!-- <form   name="myForm" onsubmit="return validateForm()"> -->
+    <form   name="myForm">
+      <div class="input_parent">
+          <div class="div4icons" id="firstBox">
+              <input name="FirstName" type="text" id="first_Name" placeholder="First Name">
+              <i class="input_icon" id="firstErrorIcon"><img src="./images/icon-error.svg"></i> 
+              </div>
+              <span id="errorMessage1" class:'invalid'><small>First Name cannot be empty</small> </span>
+      </div>
+      
+      <div class="input_parent">
+          <div  class="div4icons" id="secondBox">
+              <input name="LastName" type="text" id="second_Name" placeholder="Last Name">  
+              <i class="input_icon" id="secondErrorIcon"><img src="./images/icon-error.svg"></i> 
+              </div>
+              <span id="errorMessage2" class:'invalid'><small>Last Name cannot be empty</small></span>
+      </div>
+      
+      <div class="input_parent">
+          <div  class="div4icons" id="thirdBox">
+              <input name="Email" type="text" id="email_Address" placeholder="Email Address">
+              <i class="input_icon" id="thirdErrorIcon"><img src="./images/icon-error.svg"></i> 
+              </div>
+              <span class:'invalid' id="errorMessage3"><small>Email Address cannot be empty</small></span>      
+      </div>
+      
+      <div class="input_parent">
+          <div  class="div4icons" id="forthBox">
+              <input name="Password" type="password" id="password" placeholder="Password"> 
+              <i class="input_icon" id="forthErrorIcon"><img src="./images/icon-error.svg"></i> 
+              </div>
+              <span class:'invalid' id="errorMessage4" ><small>Password cannot be empty</small></span>
+      </div>
+
+      <!-- <button type="submit">CLAIM YOUR FREE TRIAL</button> -->
+      <button type="button" onclick="validateForm()">CLAIM YOUR FREE TRIAL</button>
+      
+
+      <p id="form_foot"> By clicking the button, you are agreeing to our <strong id="terms">Terms and Services</strong></p>
+    
+    </form>
+  </main>
+  </div>
+  </div>    
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Eluro Lydia Ogorchukwu</a>.
+    </p>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>

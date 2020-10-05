@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body{
+    background: url('images/bg-intro-mobile.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 100%, 74%);
+    margin: 10px auto;
+    width: 90%;
+    font-family: Poppins;
+    overflow-x: hidden;
+}
+
+header{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+#heading_topic{
+    line-height: 2.5rem;
+    font-size: 1.9rem;
+    font-weight: bolder;
+}
+
+#heading_paragraph{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 0px 5px 5px 5px;
+}
+
+#try{
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    height: 50px;
+    width:50%;
+    border-radius: 10px;
+    padding: 15px 25% 15px 25%;
+    font-size: 0.9rem;
+    font-weight: none;
+    box-shadow: 0px 5px 3px hsl(249, 10%, 26%);
+}
+
+form{
+    position: relative;
+    width: 84%;
+    background-color: white;
+    padding: 27px 8% 27px 8%;
+    border-radius: 10px;
+    align-content: center;
+    box-shadow: 0px 5px 3px hsl(249, 10%, 26%);
+}
+
+div{
+    margin: 0px;
+    padding: 0px;
+}
+
+.input_parent{
+    margin-bottom: 20px;
+}
+
+.div4icons{
+    display: grid;
+    grid-auto-columns: auto 1fr;
+    display: block;
+    width: 100%; 
+    height: 60px;
+    border-radius: 7px;
+    border: hsl(246, 25%, 77%) 2px solid;
+}
+
+.div4icons:focus-within{
+    border: 2px black solid;
+}
+
+input{
+    margin-left: 14px; 
+    margin-top: 14px;
+    margin-bottom: 14px;
+    border: none;
+    width: 78%;
+    height: 50%;
+    background-color: white;
+}
+
+input[placeholder] {
+    font-weight: 780;
+}
+
+input:focus{
+    outline: none;
+    background-color: white;
+    /* outline-color: white; */
+}
+
+i{
+    position: relative;
+    float: right;
+    top: 30%;
+    bottom: 30%;
+    right: 4%;
+    visibility: hidden;
+}
+
+span{
+    color: hsl(0, 100%, 74%) ;
+    font-size: 0.8em;
+    visibility: hidden;
+    float: right;
+}
+
+button{
+    position: relative;
+    width: 100%;
+    padding: 10px 20% 10px 20%;
+    height: 60px;
+    border: hsl(154, 59%, 51%) 1px solid;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 7px;
+    background-color:  hsl(154, 59%, 51%);
+    color: white;
+    border: none;
+    box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+button:active{
+    border-color: hsl(154, 59%, 51%);
+}
+
+#form_foot{
+    position: relative;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    font-size: 0.8rem
+}
+
+#terms{
+    color: hsl(0, 100%, 74%) ;
+}
+
+
+footer{
+    position: relative;
+    bottom: 2px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 650px){
+    #try{
+        position: relative;
+        margin-top: 35px;
+        margin-bottom: 20px;
+        background-color: hsl(248, 32%, 49%);
+        color: white;
+        text-align: center;
+        line-height: 80px;
+        height: 80px;
+        width:50%;
+        border-radius: 10px;
+        padding: 0px 25% 0px 25%;
+        font-size: 0.9rem;
+        font-weight: none;
+        box-shadow: 0px 5px 3px hsl(249, 10%, 26%);
+    }
+    
+}
+
+@media screen and (min-width: 850px){
+    body{
+        background: url('images/bg-intro-desktop.png');
+        background-color: hsl(0, 100%, 74%);
+        width: 100%;   
+    }
+
+    #container{
+        display: grid;
+        grid-auto-columns: 50% 50%;
+        grid-auto-flow: column;
+    }
+
+    header{
+        position: relative;
+        margin: 0px;
+        padding: 180px 16% 0px 16%;
+        color: white;
+        width: 68%;
+    }
+    
+    #heading_topic{
+        font-size: 2.1rem;
+        font-weight: bolder;
+        text-align: left;
+    }
+    
+    #heading_paragraph{
+        color: white;
+        text-align: justify;
+        font-size: 0.8rem;
+        padding: 0px;
+    }
+
+    #main_div{
+        width: 80%;
+        padding: 0px 10% 0px 10%;
+    }
+
+    #try{
+        margin-top: 35px;
+        margin-bottom: 20px;
+        background-color: hsl(248, 32%, 49%);
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        height: 50px;
+        width:70%;
+        border-radius: 10px;
+        padding: 0px 15% 0px 15%;
+        font-size: 0.8rem;
+        font-weight: none;
+        box-shadow: 0px 5px 3px hsl(249, 10%, 26%);
+    }    
+}
