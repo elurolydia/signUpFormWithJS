@@ -40,7 +40,7 @@ header{
     width: 70%;
     right: 10%;
     left: 10%;
-    top: 130px;
+    top: 250px;
     display: flex;
     flex-direction: column;
     /* height: 180px; */
@@ -70,7 +70,7 @@ header{
     100% { transform:translateY(0); }
 } */
 #popUpDiv {
-    animation: bounce 0.5s ease-in;
+    animation: bounce 0.7s ease-in;
   }
   @keyframes bounce {
       10% { transform:translateY(0%); }
