@@ -35,23 +35,37 @@ header{
 }
 
 #popUpDiv{
+    box-sizing: content-box;
+    position: absolute;
+    width: 70%;
+    right: 10%;
+    left: 10%;
+    top: 130px;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    height: 200px;
-    width: 80%;
-    max-width: 500px;
+    /* height: 180px; */
+    height: auto;
     background-color: rgba(3, 3, 3, 0.822);
-    /* color: rgb(248, 133, 152); */
     color: aliceblue;
-    padding: 15px 20px 25px 20px;
+    padding: 15px 20px 20px 20px;
     font-size: 0.79rem;
     font-family: monospace;
     border-radius: 5px;
     text-align: left;
     z-index: 10;
-    justify-self: center;
-    margin: 80px auto; 
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    overflow-x: auto;
+    /* justify-self: center; */
+}
+
+.congratulatoryInputValue{
+    visibility: visible;
+}
+
+ul{
+    padding-left: 7%;
 }
 
 #popUpButton{
@@ -71,8 +85,8 @@ header{
     background-color: hsl(248, 32%, 49%);
     color: white;
     text-align: center;
-    line-height: 25px;
-    height: 50px;
+    line-height: 20px;
+    height: 60px;
     width:50%;
     border-radius: 10px;
     padding: 15px 25% 15px 25%;
@@ -143,7 +157,7 @@ i{
     visibility: hidden;
 }
 
-span{
+.errorMsg{
     color: hsl(0, 100%, 74%) ;
     font-size: 0.8em;
     visibility: hidden;
@@ -191,9 +205,23 @@ footer{
 
 
 @media screen and (min-width: 650px){
+
     #popUpDiv{
-        margin: 80px auto;    
+        position: absolute;
+        width: 60%;
+        right: 15%;
+        left: 15%;
+        top: 130px;
+        font-size: 0.95rem;
+        height: auto;
+        /* height: 200px; */
+        padding-bottom: 25px;
     }
+
+    #popUpButton{
+        height: 30px;
+    }
+
     #try{
         position: relative;
         margin-top: 35px;
@@ -223,10 +251,19 @@ footer{
     }
 
     #popUpDiv{
-        font-size: 0.95rem;
-        margin: 100px 32% 0px 32% ;
-        width: 400px;
-        
+        position: absolute;
+        width: 24%;
+        right: 33%;
+        left: 33%;
+        top: 130px;
+        font-size: 1em;
+        /* height: 250px; */
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    #popUpButton{
+        height: 40px;
     }
 
     #container{
@@ -280,5 +317,13 @@ footer{
     footer{
         position: relative;
         bottom: 0vh;
+    }
+}
+
+@media screen and (min-width: 1350px){
+    #popUpDiv{
+        /* height: 195px; */
+        height: auto;
+        padding-bottom: 10px;
     }
 }
