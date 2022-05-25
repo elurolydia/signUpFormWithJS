@@ -27,10 +27,12 @@ let popButton = document.getElementById('popUpButton');
 let myForm = document.getElementById('myForm');
 
 popButton.addEventListener('click', popUpOut);
+
 function popUpOut(){
     popUp.style.display = 'none';
-    myForm.reset();
-    
+    myForm.reset(); 
+    for (let x = 0; x < divBox.length; x++)
+    inputBox[x].disabled = false;     
 }
 
 function validateForm(e){
@@ -74,6 +76,8 @@ function validateForm(e){
 
 function showCongratulatoryMessage () {
     popUp.style.display = 'flex';
+    for (let x = 0; x < divBox.length; x++)
+    inputBox[x].disabled = true;
 }
 
 
