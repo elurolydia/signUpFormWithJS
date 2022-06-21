@@ -8,9 +8,17 @@ body{
     margin: 10px auto;
     width: 90%;
     font-family: Poppins;
-    overflow-x: hidden;
-    
+    overflow-x: hidden;   
 }
+
+/* #typing{
+    display: flex;
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+    color: white;
+} */
 
 header{
     position: relative;

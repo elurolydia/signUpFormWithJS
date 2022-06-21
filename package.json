@@ -1,0 +1,25 @@
+{
+  "name": "signupformwithjs",
+  "version": "1.0.0",
+  "description": "![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel jsSrc --watch -d babelJs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elurolydia/signUpFormWithJS.git"
+  },
+  "author": "Lydia Eluro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elurolydia/signUpFormWithJS/issues"
+  },
+  "homepage": "https://github.com/elurolydia/signUpFormWithJS#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2"
+  }
+}
