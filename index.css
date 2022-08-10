@@ -13,6 +13,7 @@ body{
 
 #windowWidth{
     position: absolute;
+    top: 100px;
 }
 
 /* #typing{
