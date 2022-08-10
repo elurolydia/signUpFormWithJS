@@ -11,6 +11,10 @@ body{
     overflow-x: hidden;   
 }
 
+#windowWidth{
+    position: absolute;
+}
+
 /* #typing{
     display: flex;
     position: absolute;

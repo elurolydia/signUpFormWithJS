@@ -1,3 +1,6 @@
+let width = document.getElementById('windowWidth');
+width.innerText = `Window width is ${window.innerWidth}`
+
 let popUp = document.getElementById('popUpDiv');
 popUp.style.display = 'none';
 
@@ -124,3 +127,5 @@ class Person {
 const billy = new Person('Billy', 21);
 billy.sayHi();
 const sally = new Person('Sally', 16);
+
+
