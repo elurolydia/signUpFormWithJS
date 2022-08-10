@@ -1,6 +1,3 @@
-let width = document.getElementById('windowWidth');
-width.innerText = `Window width is ${window.innerWidth}`
-
 let popUp = document.getElementById('popUpDiv');
 popUp.style.display = 'none';
 
