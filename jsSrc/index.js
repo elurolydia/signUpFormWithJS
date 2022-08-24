@@ -67,11 +67,23 @@ function validateForm(e){
             }
         }
         congratulatoryInfo[i].textContent = inputBox[i].value;
+    } 
+    
+    finalChecking()
+}
 
-        if (errorMessage[i].style.visibility === 'hidden' && errorIcon[2].style.visibility === 'hidden'){
+
+function finalChecking () {
+    let specialArray = [];
+    for (let t = 0; t < 4; t++) {
+        if (errorIcon[t].style.visibility === 'hidden') {
+            specialArray.push (congratulatoryInfo[t].textContent)
+        }
+    }
+
+    if ((specialArray.length === 4) && !specialArray.includes('')) {
             showCongratulatoryMessage();
-        }    
-    }    
+    }
 }
 
 
